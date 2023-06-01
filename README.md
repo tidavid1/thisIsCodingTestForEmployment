@@ -8,4 +8,3 @@
 
 1. 문제 풀이는 각 Chapter 별 Solution Class 내부에 {문제번호} 함수명에서 진행합니다.
 2. 풀이에 대한 검증으로 Unit Test를 작성하여 실행해봅니다.
-3. 각 Chapter에 대한 간단한 설명 README.md를 꼭 작성해보도록 합시다.
