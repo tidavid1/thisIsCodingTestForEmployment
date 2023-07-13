@@ -3,14 +3,7 @@ package ch05_DFSBFS;
 import java.util.Stack;
 
 public class DFSExample {
-    public static void main(String[] args) {
-        int[][] graph = {{1,2},{0,3,4},{0,5,6},{1,7},{1,7},{2,7},{2,7},{3,4,5,6}};
-        boolean[] visited = new boolean[graph.length];
-        System.out.println("DFS Examples:");
-        System.out.println(DFS(graph, 0, visited));
-    }
-
-    private static String DFS(int[][] graph, int start, boolean[] visited) {
+    public static String DFS(int[][] graph, int start, boolean[] visited) {
         StringBuilder sb = new StringBuilder();
         visited[start] = true;
         sb.append(start).append("-");
