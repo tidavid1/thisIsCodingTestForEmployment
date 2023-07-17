@@ -3,6 +3,11 @@ package ch07_BinarySearch;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -27,15 +32,17 @@ public class SolutionTest {
     }
 
     @DisplayName("Test Q2. ")
-    @Test
-    void testQuestion02(){
-        // arrange
-        int m = 6;
-        int[] arr = {19,15,10,17};
-        int actualResult = 15;
+    @ParameterizedTest
+    @MethodSource
+    void testQuestion02(int m, int[] arr, int actualResult){
         // Act
         int exceptedResult = solution.question02(m, arr);
         // Assert
         assertEquals(exceptedResult, actualResult);
+    }
+
+    static Stream<Arguments> testQuestion02(){
+        return Stream.of(
+                Arguments.of(6, new int[]{19,15,10,17}, 15));
     }
 }
