@@ -2,7 +2,6 @@ package ch07_BinarySearch;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -19,11 +18,9 @@ public class SolutionTest {
         solution = new Solution();
     }
     @DisplayName("Test Q1. ")
-    @Test
-    void testQuestion01(){
-        // arrange
-        int[] arr1 = {8,3,7,9,2};
-        int[] arr2 = {5,7,9};
+    @ParameterizedTest
+    @MethodSource
+    void testQuestion01(int[] arr1, int[] arr2){
         String actualResult = "no yes yes";
         // Act
         String exceptedResult = solution.question01(arr1, arr2);
@@ -39,6 +36,11 @@ public class SolutionTest {
         int exceptedResult = solution.question02(m, arr);
         // Assert
         assertEquals(exceptedResult, actualResult);
+    }
+
+    static Stream<Arguments> testQuestion01(){
+        return Stream.of(
+                Arguments.of(new int[]{8,3,7,9,2}, new int[]{5,7,9}));
     }
 
     static Stream<Arguments> testQuestion02(){
