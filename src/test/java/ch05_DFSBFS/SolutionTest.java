@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@DisplayName("Test Ch05_DFS/BFS Questions")
 public class SolutionTest {
     Solution solution;
 

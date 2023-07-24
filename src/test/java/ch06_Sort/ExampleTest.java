@@ -13,6 +13,7 @@ import static ch06_Sort.SelectionSortExample.SelectionSort;
 import static ch06_Sort.ShellSortExample.ShellSort;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
+@DisplayName("Test Ch06_Sort Examples")
 public class ExampleTest {
 
     @DisplayName("Test Selection Sort")

@@ -6,6 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@DisplayName("Test Ch04_Implementation Questions")
 public class SolutionTest {
     Solution solution;
     @BeforeEach

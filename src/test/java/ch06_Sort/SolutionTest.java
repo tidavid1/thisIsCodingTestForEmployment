@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("Test Ch06_Sort Questions")
 public class SolutionTest {
     Solution solution;
 

@@ -8,6 +8,7 @@ import static ch05_DFSBFS.BFSExample.BFS;
 import static ch05_DFSBFS.DFSExample.DFS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("Test Ch05_DFS/BFS Examples")
 public class ExampleTest {
     int[][] graph;
     boolean[] visited;

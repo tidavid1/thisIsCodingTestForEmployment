@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("Test Ch08_DP Questions")
 public class SolutionTest {
     Solution solution;
 

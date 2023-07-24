@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("Test Ch07_Binary Search Questions")
 public class SolutionTest {
     Solution solution;
 
